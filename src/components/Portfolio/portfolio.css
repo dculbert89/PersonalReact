@@ -52,6 +52,9 @@
 }
 
 @media screen and (max-width: 672px) {
+  #works {
+    margin-bottom: 1rem;
+  }
   .worksImg {
     height: 32vw;
   }
