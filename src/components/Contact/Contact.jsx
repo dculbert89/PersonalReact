@@ -1,50 +1,73 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./contact.css";
-import Walmart from "../../assets/walmart.png";
-import Adobe from "../../assets/adobe.png";
-import Microsoft from "../../assets/microsoft.png";
-import Facebook from "../../assets/facebook.png";
 
-import FacebookIcon from "../../assets/facebook-icon.png"
-import TwitterIcon from "../../assets/twitter.png"
-import YoutubeIcon from "../../assets/youtube.png"
-import InstagramIcon from "../../assets/instagram.png"
+import Github from "../../assets/github.png";
+
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_gn5y0mh", //service ID
+        "template_zbr8zg5", //Template ID
+        form.current,
+        "6EsmFGonCZBXliB-j" // Public ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+          alert("Email Sent!");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
+    // Contact Form
     <section id="contactPage">
-      <div id="clients">
-        <h2 className="contactPageTitle">My Clients</h2>
-        <p className="clientDesc">
-          I have had the oppurtunity to work with a diverse group of compaines.
-          Some of the notable companies I have worked with inclueds
-        </p>
-
-        <div className="clientImgs">
-          <img src={Walmart} alt="Client" className="clientImg" />
-          <img src={Adobe} alt="Client" className="clientImg" />
-          <img src={Microsoft} alt="Client" className="clientImg" />
-          <img src={Facebook} alt="Client" className="clientImg" />
-        </div>
-      </div>
-
       <div id="contact">
         <h1 className="contactPageTitle">Contact Me</h1>
         <span className="contactDesc">
           Please fill out the form below to discuss any work oppurtunities.
         </span>
 
-        <form action="" className="contactForm">
-            <input type="text" className="name" placeholder="Your Name"/>
-            <input type="email" className="email" placeholder="Your Email"/>
-            <textarea name="message" className="msg" rows="5" placeholder="Your Message"></textarea>
-            <button className="submitBtn" type="submit" value="Send">Submit</button>
-            <div className="links">
-                <img src={FacebookIcon} alt="Facebook Icon" className="link" />
-                <img src={TwitterIcon} alt="Twitter Icon" className="link" />
-                <img src={YoutubeIcon} alt="Youtube Icon" className="link" />
-                <img src={InstagramIcon} alt="Instagram Icon" className="link" />
-            </div>
+        <form className="contactForm" ref={form} onSubmit={sendEmail}>
+          <input
+            type="text"
+            className="name"
+            placeholder="Your Name"
+            name="from_name"
+          />
+          <input
+            type="email"
+            className="email"
+            placeholder="Your Email"
+            name="from_email"
+          />
+          <textarea
+            name="message"
+            className="msg"
+            rows="5"
+            placeholder="Your Message"
+          ></textarea>
+          <button className="submitBtn" type="submit" value="Send">
+            Submit
+          </button>
+
+          <div className="links">
+            <a href="https://github.com/dculbert89">
+              <img src={Github} alt="Github Icon" className="link" />
+              <p>GitHub Repo</p>
+            </a>
+          </div>
         </form>
       </div>
     </section>

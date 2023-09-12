@@ -1,33 +1,36 @@
 import React from "react";
 import "./portfolio.css";
-import Portfolio1 from "../../assets/portfolio-1.png"
-import Portfolio2 from "../../assets/portfolio-2.png"
-import Portfolio3 from "../../assets/portfolio-3.png"
-import Portfolio4 from "../../assets/portfolio-4.png"
-import Portfolio5 from "../../assets/portfolio-5.png"
-import Portfolio6 from "../../assets/portfolio-6.png"
-
+import Portfolio1 from "../../assets/portfolio-1.svg";
+import Portfolio2 from "../../assets/portfolio-2.svg";
+import Portfolio3 from "../../assets/portfolio-3.svg";
 
 export const Portfolio = () => {
   return (
     <section id="works">
       <h2 className="worksTitle">My Portfolio</h2>
       <span className="worksDesc">
-        I take pride in paying attention to the smallest details and making sure
-        thatmy work is pixel perfect. I am excited to bring my skills and
-        experience to help businesses acheive their goals and create a strong
-        online presence.
+        I have a strong commitment to attention to detail, ensuring that my work
+        is precise. I'm enthusiastic about applying my expertise to assist
+        businesses in reaching their objectives and establishing a robust online
+        identity.
       </span>
 
       <div className="worksImgs">
-        <img src={Portfolio1} alt="Portfolio1" className="worksImg" />
-        <img src={Portfolio2} alt="Portfolio2" className="worksImg" />
-        <img src={Portfolio3} alt="Portfolio3" className="worksImg" />
-        <img src={Portfolio4} alt="Portfolio4" className="worksImg" />
-        <img src={Portfolio5} alt="Portfolio5" className="worksImg" />
-        <img src={Portfolio6} alt="Portfolio6" className="worksImg" />
+        <a href="https://dculbert89-weather.netlify.app/">
+          <img src={Portfolio1} alt="Portfolio1" className="worksImg" />
+        </a>
+
+        <a href="https://culbertson-todo.netlify.app/">
+          <img src={Portfolio2} alt="Portfolio2" className="worksImg" />
+        </a>
+
+        <a href="https://pageturnersreviews.netlify.app/">
+          <img src={Portfolio3} alt="Portfolio3" className="worksImg" />
+        </a>
+
+
       </div>
-      <button className="worksBtn">See More</button>
+      {/* <button className="worksBtn">See More</button> */}
     </section>
   );
 };
