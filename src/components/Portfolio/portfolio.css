@@ -51,8 +51,8 @@
   font-size: 1rem;
 }
 
-@media screen and (max-width: 585px) {
+@media screen and (max-width: 672px) {
   .worksImg {
-    height: 48vw;
+    height: 32vw;
   }
 }
