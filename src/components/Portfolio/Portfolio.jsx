@@ -4,6 +4,8 @@ import Portfolio1 from "../../assets/portfolio-1.svg";
 import Portfolio2 from "../../assets/portfolio-2.svg";
 import Portfolio3 from "../../assets/portfolio-3.svg";
 import Portfolio4 from "../../assets/portfolio-4.svg";
+import Portfolio5 from "../../assets/portfolio-5.png";
+import Portfolio6 from "../../assets/portfolio-6.png";
 
 export const Portfolio = () => {
   return (
@@ -17,6 +19,20 @@ export const Portfolio = () => {
       </span>
 
       <div className="worksImgs">
+        <a
+          href="https://ecommerce-store-sable-six.vercel.app/category/fbf40016-e906-44db-818a-befd8eb3fa75/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={Portfolio5} alt="Portfolio5" className="worksImg" />
+        </a>
+        <a
+          href="https://e-comm-admin-ten.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={Portfolio6} alt="Portfolio6" className="worksImg" />
+        </a>
         <a
           href="https://dculbert89-weather.netlify.app/"
           target="_blank"
