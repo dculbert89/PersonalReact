@@ -20,7 +20,7 @@ export const Portfolio = () => {
 
       <div className="worksImgs">
         <a
-          href="https://ecommerce-store-sable-six.vercel.app/category/fbf40016-e906-44db-818a-befd8eb3fa75/"
+          href="https://ecommerce-store-sable-six.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
