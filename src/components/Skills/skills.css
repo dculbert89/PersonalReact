@@ -36,14 +36,14 @@
   /* margin-top: 8px; */
   /* border-top: 2px solid; */
   /* border-bottom: 2px solid; */
-  width: 22vh;
-  height: 25vh;
+  /* width: 22vh;
+  height: 25vh; */
   display: flex;
   justify-content: center;
 }
 
 .skillBlock img {
-  border: 2px solid;
+  /* border: 2px solid; */
   height: 18vh;
   width: 18vh;
   align-self: center;
@@ -102,5 +102,11 @@
   }
   .skillBarText {
     font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 452px) {
+  .skillBlockContainer {
+    margin: 0 0px;
   }
 }
