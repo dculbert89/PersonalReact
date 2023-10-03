@@ -59,7 +59,7 @@ export const Skills = () => {
 
       <div className="skillBars">
         <div className="skillBar">
-          <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
+          <img src={UIDesign} alt="UIDesign" className="skillBarIcon" />
           <div className="skillBarText">
             <h2>UI/UX Design</h2>
             <p>
@@ -71,7 +71,7 @@ export const Skills = () => {
         </div>
 
         <div className="skillBar">
-          <img src={WebDesign} alt="WebDesign" className="skillBarImg" />
+          <img src={WebDesign} alt="WebDesign" className="skillBarIcon" />
           <div className="skillBarText">
             <h2>Web Design</h2>
             <p>
@@ -82,7 +82,7 @@ export const Skills = () => {
         </div>
 
         <div className="skillBar">
-          <img src={AppDesign} alt="AppDesign" className="skillBarImg" />
+          <img src={AppDesign} alt="AppDesign" className="skillBarIcon" />
           <div className="skillBarText">
             <h2>App Design</h2>
             <p>

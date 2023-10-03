@@ -64,7 +64,7 @@
   background: rgb(50, 50, 50);
 }
 
-.skillBarImg {
+.skillBarIcon {
   object-fit: cover;
   height: 3rem;
   width: 3rem;
@@ -96,7 +96,7 @@
   .skillBarText > p {
     font-size: 3vw;
   }
-  .skillBarImg {
+  .skillBarIcon {
     height: 2.25rem;
     width: 2.25rem;
   }
