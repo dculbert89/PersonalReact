@@ -3,17 +3,60 @@ import "./skills.css";
 import UIDesign from "../../assets/ui-design.png";
 import WebDesign from "../../assets/website-design.png";
 import AppDesign from "../../assets/app-design.png";
+import htmlLogo from "../../assets/HTML5_Logo.svg";
+import jsLogo from "../../assets/icons8-javascript.svg";
+import reactLogo from "../../assets/icons8-react.svg";
+import mysqlLogo from "../../assets/icons8-mysql.svg";
+import tsLogo from "../../assets/icons8-tailwindcss.svg";
+import gitLogo from "../../assets/git.svg";
+import nodeLogo from "../../assets/icons8-node-js.svg";
+import nextLogo from "../../assets/icons8-nextjs.svg";
+import cssLogo from "../../assets/icons8-css.svg";
 
 export const Skills = () => {
   return (
     <section id="skills">
       <span className="skillTitle">What I do</span>
       <span className="skillDesc">
-        I am a skilled and passionate web developer. I have a strong
-        understanding of design and a keen eye for detail. I am proficient in
-        HTML, CSS, and JavaScript, as well as design software such as Figma and
-        Canva.
+        I specialize in developing responsive and user-friendly web applications
+        With knowledge in technologies like React, Next.js, Tailwind CSS,
+        Prisma, MySQL, and more, I create seamless and modern digital
+        experiences. I'm committed to delivering efficient, secure, and visually
+        appealing solutions. My work ensures accessibility, real-time data
+        integration, and intuitive user experiences, catering to a wide range of
+        web development needs.
       </span>
+
+      <div className="skillBlockContainer">
+        <div className="skillBlock">
+          <img src={htmlLogo} alt="Portfolio5" className="worksImg" />
+        </div>
+        <div className="skillBlock">
+          <img src={jsLogo} alt="JavaScript Logo" className="worksImg" />
+        </div>
+        <div className="skillBlock">
+          <img src={cssLogo} alt="CSS Logo" className="worksImg" />
+        </div>
+        <div className="skillBlock">
+          <img src={reactLogo} alt="React Logo" className="worksImg" />
+        </div>
+        <div className="skillBlock">
+          <img src={mysqlLogo} alt="MySQL Logo" className="worksImg" />
+        </div>
+        <div className="skillBlock">
+          <img src={nextLogo} alt="Next JS Logo" className="worksImg" />
+        </div>
+        <div className="skillBlock">
+          <img src={tsLogo} alt="Tailwind Logo" className="worksImg" />
+        </div>
+        <div className="skillBlock">
+          <img src={gitLogo} alt="Git logo" className="worksImg" />
+        </div>
+        <div className="skillBlock">
+          <img src={nodeLogo} alt="Node JS logo" className="worksImg" />
+        </div>
+      </div>
+
       <div className="skillBars">
         <div className="skillBar">
           <img src={UIDesign} alt="UIDesign" className="skillBarImg" />

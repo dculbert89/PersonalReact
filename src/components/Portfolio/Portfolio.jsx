@@ -12,10 +12,10 @@ export const Portfolio = () => {
     <section id="works">
       <h2 className="worksTitle">My Portfolio</h2>
       <span className="worksDesc">
-        I have a strong commitment to attention to detail, ensuring that my work
-        is precise. I'm enthusiastic about applying my expertise to assist
-        businesses in reaching their objectives and establishing a robust online
-        identity.
+        <div>
+          A collection of my technical projects that showcase my skills and
+          experience as a developer.
+        </div>
       </span>
 
       <div className="worksImgs">
