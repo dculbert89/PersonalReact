@@ -6,7 +6,7 @@ import AppDesign from "../../assets/app-design.png";
 import htmlLogo from "../../assets/HTML5_Logo.svg";
 import jsLogo from "../../assets/icons8-javascript.svg";
 import reactLogo from "../../assets/icons8-react.svg";
-import mysqlLogo from "../../assets/icons8-mysql.svg";
+import postgreSQL from "../../assets/postgresql.svg";
 import tsLogo from "../../assets/icons8-tailwindcss.svg";
 import gitLogo from "../../assets/git.svg";
 import nodeLogo from "../../assets/icons8-node-js.svg";
@@ -41,7 +41,7 @@ export const Skills = () => {
           <img src={reactLogo} alt="React Logo" className="worksImg" />
         </div>
         <div className="skillBlock">
-          <img src={mysqlLogo} alt="MySQL Logo" className="worksImg" />
+          <img src={postgreSQL} alt="MySQL Logo" className="worksImg" />
         </div>
         <div className="skillBlock">
           <img src={nextLogo} alt="Next JS Logo" className="worksImg" />
