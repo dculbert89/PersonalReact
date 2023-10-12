@@ -20,7 +20,7 @@ export const Skills = () => {
       <span className="skillDesc">
         I specialize in developing responsive and user-friendly web applications
         With knowledge in technologies like React, Next.js, Tailwind CSS,
-        Prisma, MySQL, and more, I create seamless and modern digital
+        Prisma, PostgreSQL, and more, I create seamless and modern digital
         experiences. I'm committed to delivering efficient, secure, and visually
         appealing solutions. My work ensures accessibility, real-time data
         integration, and intuitive user experiences, catering to a wide range of
