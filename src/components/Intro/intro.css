@@ -74,15 +74,15 @@
 
 @media screen and (max-width: 480px) {
   .bg {
-    right: -40vw;
+    right: -20vw;
   }
 }
 
 @media screen and (max-width: 390px) {
   .bg {
-    right: -35vw;
+    right: -20vw;
   }
   .introPara {
-    font-size: 20vw;
+    font-size: 5vw;
   }
 }
