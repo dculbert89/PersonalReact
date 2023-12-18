@@ -2,7 +2,7 @@ import React from "react";
 import "./portfolio.css";
 import Portfolio1 from "../../assets/portfolio-1.svg";
 import Portfolio2 from "../../assets/portfolio-2.svg";
-import Portfolio3 from "../../assets/portfolio-3.svg";
+// import Portfolio3 from "../../assets/portfolio-3.svg";
 import Portfolio4 from "../../assets/portfolio-4.svg";
 import Portfolio5 from "../../assets/portfolio-5.png";
 import Portfolio6 from "../../assets/portfolio-6.png";
