@@ -49,13 +49,13 @@ export const Portfolio = () => {
           <img src={Portfolio2} alt="Portfolio2" className="worksImg" />
         </a>
 
-        <a
+        {/* <a
           href="https://pageturnersreviews.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={Portfolio3} alt="Portfolio3" className="worksImg" />
-        </a>
+        </a> */}
 
         <a
           href="https://culbertson-clock.netlify.app/"
